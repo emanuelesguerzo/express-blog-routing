@@ -12,8 +12,9 @@ router.get("/", (req, res) => {
 
 // Show
 router.get("/:id", (req, res) => {
-    const postId = req.params.id;
-    res.json("Visualizziamo l'elemento numero " + postId);
+    const postId = parseInt(req.params.id);
+    const post = postsData.find((curPost) => curPost.id === postId);
+    res.json(post);
 });
 
 // Create
