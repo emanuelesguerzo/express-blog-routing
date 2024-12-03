@@ -1,3 +1,4 @@
+// Data
 const posts = [
     {
         id: 1,
@@ -36,4 +37,5 @@ const posts = [
     }
 ];
 
+// Export
 module.exports = posts;
